@@ -25,4 +25,33 @@ Crie uma variável para armazenar o nome e a quantidade de experiência (XP) de 
 Ao final deve se exibir uma mensagem:
 "O Herói de nome **{nome}** está no nível de **{nivel}**"
 
- 
+## Requisitos Adicionais
+
+Além do objetivo principal, o código foi atualizado para permitir a entrada de dados através do terminal([utilizando o prompt-sync](https://www.dio.me/articles/como-executar-um-arquivo-js-pelo-terminal)), tornando os testes mais rápidos e dinâmicos. Dessa forama, o usuário pode inserir o nome e a quantidade de experiência do herói diretamente no momento da execução do programa.
+
+Além disso, utilizei o ["Template strings" do JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Template_literals), uma funcionalidade para colocar variáveis dentro das mensagens, substituindo a necessidade de usar o sinal de "+" para concatenar. A sintaxe utilizada é a seguinte:
+
+~~~javascript
+console.log(`O herói de nome ${nomeDoHeroi} está no nível ${nivelDoHeroi}`);
+~~~
+
+### Pré-requisitos para executar o projeto
+
+1. Clone este repositório para sua máquina local:
+
+~~~bash
+git clone https://github.com/seu-usuario/nome-do-repositorio.git
+~~~
+
+2. Instale as depedências: 
+
+~~~bash
+npm install prompt-sync
+~~~
+
+3. Execute o projeto:
+
+~~~bash
+node index.js
+~~~
+
